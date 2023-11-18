@@ -1,4 +1,5 @@
 import kotlin.math.pow
+import kotlin.math.round
 import kotlin.math.sqrt
 
 class Triangle(private val p1: Point, private val p2: Point, private val p3: Point){
@@ -20,6 +21,6 @@ class Triangle(private val p1: Point, private val p2: Point, private val p3: Poi
         val a = getDistance(p1, p2)
         val b = getDistance(p2, p3)
         val c = getDistance(p3, p1)
-        this.area = sqrt((hp * (hp - a) * (hp - b) * (hp - c)))
+        this.area = (round(sqrt((hp * (hp - a) * (hp - b) * (hp - c))) * 100)) / 100.0
     }
 }

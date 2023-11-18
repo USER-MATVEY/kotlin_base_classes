@@ -5,5 +5,6 @@ fun main(){
     val point2 = Point()
     point1.setcoords()
     point2.setcoords()
+    println("Расстояние между точками: ")
     println(getDistance(point1, point2))
 }

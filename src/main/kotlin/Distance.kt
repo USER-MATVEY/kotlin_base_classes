@@ -2,8 +2,6 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class Distance {
-
-
     companion object {
         fun getDistance(first: Point, second: Point): Double {
             return sqrt(

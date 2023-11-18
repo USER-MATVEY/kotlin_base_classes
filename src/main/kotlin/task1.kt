@@ -18,8 +18,14 @@ fun main() {
     ex_tr_1.setArea()
     ex_tr_2.setArea()
     ex_tr_3.setArea()
+    println("Площади треугольников: ")
+    println("Главный треугольник: ${main_triangle.area}")
+    println("Дополнительные треугольники:")
+    println(ex_tr_1.area)
+    println(ex_tr_2.area)
+    println(ex_tr_3.area)
 
-    if (main_triangle.area != (ex_tr_1.area + ex_tr_2.area + ex_tr_3.area))
+    if (main_triangle.area - (ex_tr_1.area + ex_tr_2.area + ex_tr_3.area) < 0)
         println("Введённая точка находится за пределами треугольника!")
     else println("Введённая точка в пределах треугольника.")
 }
